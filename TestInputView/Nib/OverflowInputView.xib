@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14111" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14111"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OverflowInputView" customModule="TestInputView" customModuleProvider="target">
+            <connections>
+                <outlet property="inputViewBottomConstraint" destination="CNp-ho-fT4" id="APf-6g-ns7"/>
+                <outlet property="textInputView" destination="bh6-2f-ijK" id="USQ-nk-qXj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bh6-2f-ijK" customClass="InputView" customModule="TestInputView" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bh6-2f-ijK" secondAttribute="bottom" constant="70" id="CNp-ho-fT4"/>
+                <constraint firstItem="bh6-2f-ijK" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="I8g-GP-X0s"/>
+                <constraint firstItem="bh6-2f-ijK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Vqs-nu-0Ya"/>
+                <constraint firstItem="bh6-2f-ijK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YDR-74-Ig0"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="-211"/>
+        </view>
+    </objects>
+</document>
